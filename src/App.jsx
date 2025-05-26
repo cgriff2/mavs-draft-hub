@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { CssBaseline, Container, AppBar, Toolbar, Typography, Box, Button } from '@mui/material';
 import BigBoard from './components/BigBoard';
 import PlayerProfile from './components/PlayerProfile';
+import mavsLogo from './assets/mavs.png';
 
 function Navbar() {
   return (
@@ -15,9 +16,12 @@ function Navbar() {
       }}
     >
       <Toolbar sx={{ justifyContent: 'space-between' }}>
-        <Typography variant="h6" sx={{ fontWeight: 600 }}>
-          Mavericks Draft Hub
-        </Typography>
+        <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+          <img src={mavsLogo} alt="Mavs Logo" style={{ height: 50 }} />
+          <Typography variant="h6" sx={{ fontWeight: 600 }}>
+            Mavericks Draft Hub
+          </Typography>
+        </Box>
         <Box>
           <Button color="inherit" component={Link} to="/" sx={{ fontWeight: 500 }}>
             Big Board

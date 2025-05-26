@@ -15,12 +15,9 @@ function Navbar() {
       }}
     >
       <Toolbar sx={{ justifyContent: 'space-between' }}>
-        <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-          <img src="../assets/mavs.png" alt="Mavs Logo" style={{ height: 40 }} />
-          <Typography variant="h6" sx={{ fontWeight: 600 }}>
-            Mavericks Draft Hub
-          </Typography>
-        </Box>
+        <Typography variant="h6" sx={{ fontWeight: 600 }}>
+          Mavericks Draft Hub
+        </Typography>
         <Box>
           <Button color="inherit" component={Link} to="/" sx={{ fontWeight: 500 }}>
             Big Board

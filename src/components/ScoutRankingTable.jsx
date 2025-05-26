@@ -15,9 +15,6 @@ const ScoutRankingTable = ({ rankings }) => {
 
   return (
     <>
-      <Typography variant="subtitle2" gutterBottom>
-        Scout Rankings
-      </Typography>
       <Table size="small">
         <TableHead>
           <TableRow>
